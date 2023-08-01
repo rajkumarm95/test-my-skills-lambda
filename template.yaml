@@ -1,0 +1,17 @@
+Resources:
+  MyLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: build/
+      Handler: index.handler
+      Runtime: nodejs14.x
+      Timeout: 900
+      Environment:
+        Variables:
+          DB_HOST : "ep-tight-hat-690547.us-east-2.aws.neon.tech"
+          DB_PORT : "5432"
+          DB_USER : "rajkumarm95"
+          DB_PASS : "EWDobxQ6X4Kj"
+          DB_NAME : "neondb"
+          OPENAI_API_KEY : "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"
+          OPENAI_ORGANIZATION : "org-ebxjcuJGM4Z7cSZWKT7LWlVA"
